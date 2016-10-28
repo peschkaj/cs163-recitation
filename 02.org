@@ -1,0 +1,32 @@
+#-*- org -*-
+#+STARTUP: indent
+
+* Proficiency Demo
+** Recursion
+
+5 main cases in recursion
+
+1. Base
+2. Pre-call
+3. call
+4. post-call
+5. return
+
+*Example problem* Find the largest item in the list and return the number of occurrences of that item.
+
+** Recursion with CL Ls
+- Changes are largely base case
+- Keep track of ~rear~ and ~current~
+- Base case becomes ~current == rear~ (we're at the end)
+  - It's OK to duplicate code when using recursion on a CLL.
+  - It's also OK to even use multiple returns inside the recursive function
+- If anything gets added at the last position, we need to make sure to reset ~rear~ to the newly added node.
+
+** General Advice
+
+- Don't assume that the function headers provided need to be the final function definition.
+- Know how to combine lists.
+- Know how to reverse a list (take a list and copy it into a new list in reverse).
+- Don't trust the ~display~ function that is provided - it'll break in recursion.
+- swaps, displays, copies, adds
+- Know how to return averages
